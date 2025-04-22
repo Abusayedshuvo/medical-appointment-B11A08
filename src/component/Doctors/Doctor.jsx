@@ -22,12 +22,12 @@ const Doctor = ({ doc }) => {
           </span>
         </div>
         <p className="text-2xl font-extrabold"> {doctor_name} </p>
-        <p className="text-lg font-medium text-[#0F0F0F]/60 pt-3">
-          {education[0]},
+        <p className="text-lg font-medium text-[#0F0F0F]/60 py-3">
+          {education[0]}
         </p>
-        <p className="text-lg font-medium text-[#0F0F0F]/60 pb-3">
+        {/* <p className="text-lg font-medium text-[#0F0F0F]/60 pb-3">
           {education[1]}
-        </p>
+        </p> */}
 
         <div className="border-dashed w-full border-t border-[#0F0F0F]/20"></div>
         <div className="flex gap-3 my-4">
@@ -36,7 +36,7 @@ const Doctor = ({ doc }) => {
             Reg No: {registration_number}
           </p>
         </div>
-        <button className="text-[20px] font-bold text-[#176AE5] border-2 border-[#176AE5] rounded-full w-full py-3">
+        <button className="text-[20px] font-bold text-[#176AE5] border-2 border-[#176AE5] rounded-full w-full py-3 hover:bg-[#176AE5] hover:text-white duration-300">
           View Details
         </button>
       </div>

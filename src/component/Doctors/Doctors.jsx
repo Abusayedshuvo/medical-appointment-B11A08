@@ -23,6 +23,10 @@ const Doctors = () => {
           ))}
         </Suspense>
       </div>
+
+      <div className="text-center mt-12">
+        <button className="btn-one">View All Doctors</button>
+      </div>
     </div>
   );
 };
