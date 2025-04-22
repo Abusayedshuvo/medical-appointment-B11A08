@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
-
 import Doctor from "./Doctor";
 
-const Doctors = ({ data }) => {
+const Doctors = ({ allDoctors }) => {
+  console.log(allDoctors);
   return (
     <div className="py-20 mx-4 xl:mx-40">
       <div className="text-center max-w-[1000px] mx-auto mb-8">
@@ -15,10 +15,14 @@ const Doctors = ({ data }) => {
         </p>
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-        <Suspense fallback={<p> Loading .....</p>}>
-          {data?.map((doc, index) => (
-            <Doctor key={index} doc={doc}></Doctor>
-          ))}
+        <Suspense fallback={<p>Loading.....</p>}>
+          {Array.isArray(allDoctors) && allDoctors?.length > 0 ? (
+            allDoctors?.map((doc, index) => (
+              <Doctor key={index} doc={doc}></Doctor>
+            ))
+          ) : (
+            <p>No data available</p>
+          )}
         </Suspense>
       </div>
 

@@ -5,6 +5,7 @@
 - React JS
 - React Router
 - Tailwind CSS
+- React Counter
 
 ## Sections
 
@@ -12,3 +13,8 @@
 - Banner
 - Best Doctors
 - Success
+
+## Pages
+
+- Home
+- Doctor Details

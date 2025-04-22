@@ -2,13 +2,14 @@ import React from "react";
 import Banner from "../Banner/Banner";
 import Doctors from "../Doctors/Doctors";
 import Success from "../Success/Success";
+import { useLoaderData } from "react-router";
 
 const Home = () => {
-  const dataPromise = fetch("/doctors.json").then((res) => res.json());
+  const allDoctors = useLoaderData();
   return (
     <>
       <Banner></Banner>
-      <Doctors dataPromise={dataPromise}></Doctors>
+      <Doctors allDoctors={allDoctors}></Doctors>
       <Success></Success>
     </>
   );
