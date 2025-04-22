@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center px-[160px] py-5 ">
+    <div className="hidden xl:flex justify-between items-center px-[160px] py-5 ">
       <div>
         <img src={logo} alt="" />
       </div>

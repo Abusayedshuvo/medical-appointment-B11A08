@@ -1,8 +1,10 @@
 import React from "react";
 import rIcon from "/R.svg";
+import { Link } from "react-router";
 
 const Doctor = ({ doc }) => {
   const {
+    id,
     doctor_image,
     doctor_name,
     education,
@@ -36,9 +38,12 @@ const Doctor = ({ doc }) => {
             Reg No: {registration_number}
           </p>
         </div>
-        <button className="text-[20px] font-bold text-[#176AE5] border-2 border-[#176AE5] rounded-full w-full py-3 hover:bg-[#176AE5] hover:text-white duration-300">
+        <Link
+          to={`doctor/${id}`}
+          className="text-[20px] font-bold text-[#176AE5] border-2 border-[#176AE5] rounded-full w-full block py-3 hover:bg-[#176AE5] hover:text-white duration-300 text-center"
+        >
           View Details
-        </button>
+        </Link>
       </div>
     </>
   );
