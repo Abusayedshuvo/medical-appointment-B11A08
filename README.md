@@ -6,7 +6,8 @@
 - React Router
 - Tailwind CSS
 
-### Sections
+## Sections
 
 - Navbar
 - Banner
+- Best Doctors

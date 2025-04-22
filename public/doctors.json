@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "doctor_image": "/doc/doc1.png",
+    "doctor_name": "Dr. Emily Clark",
+    "education": [
+      "MD from Harvard Medical School",
+      "Residency in Cardiology at Massachusetts General Hospital"
+    ],
+    "speciality": "Cardiology",
+    "experience": "15 Years",
+    "registration_number": "MED12345678"
+  },
+  {
+    "id": 2,
+    "doctor_image": "/doc/doc2.png",
+    "doctor_name": "Dr. Jane Smith",
+    "education": [
+      "MBBS from Johns Hopkins University",
+      "Fellowship in Neurology at Mayo Clinic"
+    ],
+    "speciality": "Neurology",
+    "experience": "10 Years",
+    "registration_number": "MED87654321"
+  },
+  {
+    "id": 3,
+    "doctor_image": "/doc/doc3.png",
+    "doctor_name": "Dr. Robert Johnson",
+    "education": [
+      "MD from Stanford University",
+      "Pediatric Residency at Boston Children's Hospital"
+    ],
+    "speciality": "Pediatrics",
+    "experience": "8 Years",
+    "registration_number": "MED24681012"
+  },
+  {
+    "id": 4,
+    "doctor_image": "/doc/doc4.png",
+    "doctor_name": "Dr. Sarah Williams",
+    "education": [
+      "MBBS from University of California",
+      "Orthopedic Surgery Residency at NYU Langone"
+    ],
+    "speciality": "Orthopedic Surgery",
+    "experience": "12 Years",
+    "registration_number": "MED13579246"
+  },
+  {
+    "id": 5,
+    "doctor_image": "/doc/doc5.png",
+    "doctor_name": "Dr. Michael Brown",
+    "education": [
+      "MD from Yale School of Medicine",
+      "Ophthalmology Fellowship at Wills Eye Hospital"
+    ],
+    "speciality": "Ophthalmology",
+    "experience": "7 Years",
+    "registration_number": "MED86420975"
+  },
+  {
+    "id": 6,
+    "doctor_image": "/doc/doc6.png",
+    "doctor_name": "Dr. John Doe",
+    "education": [
+      "MD from University of Pennsylvania",
+      "Dermatology Residency at Cleveland Clinic"
+    ],
+    "speciality": "Dermatology",
+    "experience": "9 Years",
+    "registration_number": "MED75319028"
+  }
+]

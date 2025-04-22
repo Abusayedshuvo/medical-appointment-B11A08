@@ -4,7 +4,7 @@ import bannerImg2 from "/banner2.png";
 
 const Banner = () => {
   return (
-    <div className="mx-50  bg-linear-to-bl from-white/0 to-white  border-white border-2 rounded-3xl px-40 py-16 text-center">
+    <div className="mx-12 bg-linear-to-bl from-white/0 to-white  border-white border-2 rounded-3xl px-40 py-16 text-center">
       <h1 className="text-5xl mb-4 font-extrabold">
         Dependable Care, Backed by Trusted Professionals.
       </h1>
@@ -26,11 +26,11 @@ const Banner = () => {
       </div>
       <div className="grid grid-cols-2 mt-6 gap-6">
         <div>
-          <img className="rounded-2xl" src={bannerImg1} alt="" />
+          <img className="rounded-2xl w-full" src={bannerImg1} alt="" />
         </div>
         <div>
           <img
-            className="rounded-2xl max-h-[350px] w-full object-cover"
+            className="rounded-2xl max-h-[442px] w-full object-cover"
             src={bannerImg2}
             alt=""
           />
