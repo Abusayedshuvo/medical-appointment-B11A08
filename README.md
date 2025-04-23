@@ -7,6 +7,7 @@
 - Tailwind CSS
 - React Counter
 - React-toastify
+- Recharts
 
 ## Sections
 

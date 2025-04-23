@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getStoreDoc, removeFromStoreLs } from "../../utility/addToLs";
+import Charts from "../Charts/Charts";
 
 const Appointments = () => {
   const data = useLoaderData();
@@ -26,6 +27,7 @@ const Appointments = () => {
   };
   return (
     <div>
+      <Charts appointmentsList={appointmentsList}></Charts>
       <div className="text-center mb-8">
         <p className="text-[40px] font-extrabold">My Today Appointments</p>
         <p>

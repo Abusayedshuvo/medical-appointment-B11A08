@@ -11,7 +11,7 @@
     "experience": "15 Years",
     "registration_number": "MED12345678",
     "workplace": "City Heart Hospital, New York",
-    "fee": "$200 (Consultation)",
+    "fee": "200",
     "availability": ["Monday", "Wednesday", "Friday"]
   },
   {
@@ -26,7 +26,7 @@
     "experience": "10 Years",
     "registration_number": "MED87654321",
     "workplace": "NeuroCare Institute, Boston",
-    "fee": "$180 (Consultation)",
+    "fee": "180 ",
     "availability": ["Tuesday", "Thursday", "Saturday"]
   },
   {
@@ -41,7 +41,7 @@
     "experience": "8 Years",
     "registration_number": "MED24681012",
     "workplace": "Sunshine Children's Clinic, Chicago",
-    "fee": "$150 (Consultation)",
+    "fee": "150 ",
     "availability": ["Monday", "Wednesday", "Friday"]
   },
   {
@@ -56,7 +56,7 @@
     "experience": "12 Years",
     "registration_number": "MED13579246",
     "workplace": "Bone & Joint Center, Los Angeles",
-    "fee": "$220 (Consultation)",
+    "fee": "220 ",
     "availability": ["Tuesday", "Thursday", "Saturday"]
   },
   {
@@ -71,7 +71,7 @@
     "experience": "7 Years",
     "registration_number": "MED86420975",
     "workplace": "VisionPlus Eye Clinic, Houston",
-    "fee": "$170 (Consultation)",
+    "fee": "170 ",
     "availability": ["Monday", "Wednesday", "Friday"]
   },
   {
@@ -86,7 +86,7 @@
     "experience": "9 Years",
     "registration_number": "MED75319028",
     "workplace": "SkinHealth Center, Miami",
-    "fee": "$190 (Consultation)",
+    "fee": "190 ",
     "availability": ["Tuesday", "Thursday", "Saturday"]
   }
 ]
