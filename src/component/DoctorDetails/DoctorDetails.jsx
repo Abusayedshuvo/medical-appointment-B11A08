@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import Appointment from "./Appointment";
 import rIcon from "/R.svg";
 import { useLoaderData, useParams } from "react-router";
 
@@ -20,14 +20,12 @@ const DoctorDetails = () => {
       </div>
 
       <div className=" bg-white rounded-3xl mb-8 py-20  mx-4 xl:mx-40 p-14">
-        <div className="grid grid-cols-12">
+        <div className="grid grid-cols-12 gap-6">
           <div className="col-span-3">
-            <img src={doctor_image} alt="" />
+            <img className="rounded-2xl" src={doctor_image} alt="" />
           </div>
           <div className="col-span-9">
-            <p className="text-3xl font-extrabold mb-3">
-              Dr. Cameron Williamson
-            </p>
+            <p className="text-3xl font-extrabold mb-3">{doctor_name}</p>
             <p className="text-lg font-medium text-[#0F0F0F]/60">
               MBBS, MD General Medicine, DNB
             </p>
@@ -41,7 +39,7 @@ const DoctorDetails = () => {
             <div className="border-dashed w-full border-t border-[#0F0F0F]/20"></div>
             <div className="flex gap-3 py-3">
               <img src={rIcon} alt="" />
-              <p>Reg No: BD 12451254</p>
+              <p>Reg No: {registration_number} </p>
             </div>
             <div className="border-dashed w-full border-t border-[#0F0F0F]/20"></div>
             <div className="flex items-center mt-5">
@@ -66,29 +64,7 @@ const DoctorDetails = () => {
         </div>
       </div>
 
-      <div className=" bg-white rounded-3xl mb-8 py-20  mx-4 xl:mx-40 p-14">
-        <p className="text-center text-2xl font-extrabold mb-4">
-          Book an Appointment
-        </p>
-
-        <div className="border-dashed w-full border-t border-[#0F0F0F]/20"></div>
-        <div className="flex justify-between items-center py-4">
-          <p className="text-lg font-bold"> Availability </p>
-          <span className="text-[#09982F] bg-[#09982F]/10 border border-[#09982F]/20 text-sm px-4 py-2 rounded-full font-medium">
-            Doctor Available Today
-          </span>
-        </div>
-        <div className="border-dashed w-full border-t border-[#0F0F0F]/20 mb-5"></div>
-
-        <p className="text-[#FFA000] bg-[#FFA000]/10 px-4 py-2 rounded-full mb-10">
-          Due to high patient volume, we are currently accepting appointments
-          for today only. We appreciate your understanding and cooperation.
-        </p>
-
-        <button className="btn-one w-full justify-center">
-          Book Appointment Now
-        </button>
-      </div>
+      <Appointment id={id}></Appointment>
     </>
   );
 };

@@ -9,7 +9,10 @@
     ],
     "speciality": "Cardiology",
     "experience": "15 Years",
-    "registration_number": "MED12345678"
+    "registration_number": "MED12345678",
+    "workplace": "City Heart Hospital, New York",
+    "fee": "$200 (Consultation)",
+    "availability": ["Monday", "Wednesday", "Friday"]
   },
   {
     "id": 2,
@@ -21,7 +24,10 @@
     ],
     "speciality": "Neurology",
     "experience": "10 Years",
-    "registration_number": "MED87654321"
+    "registration_number": "MED87654321",
+    "workplace": "NeuroCare Institute, Boston",
+    "fee": "$180 (Consultation)",
+    "availability": ["Tuesday", "Thursday", "Saturday"]
   },
   {
     "id": 3,
@@ -33,7 +39,10 @@
     ],
     "speciality": "Pediatrics",
     "experience": "8 Years",
-    "registration_number": "MED24681012"
+    "registration_number": "MED24681012",
+    "workplace": "Sunshine Children's Clinic, Chicago",
+    "fee": "$150 (Consultation)",
+    "availability": ["Monday", "Wednesday", "Friday"]
   },
   {
     "id": 4,
@@ -45,7 +54,10 @@
     ],
     "speciality": "Orthopedic Surgery",
     "experience": "12 Years",
-    "registration_number": "MED13579246"
+    "registration_number": "MED13579246",
+    "workplace": "Bone & Joint Center, Los Angeles",
+    "fee": "$220 (Consultation)",
+    "availability": ["Tuesday", "Thursday", "Saturday"]
   },
   {
     "id": 5,
@@ -57,7 +69,10 @@
     ],
     "speciality": "Ophthalmology",
     "experience": "7 Years",
-    "registration_number": "MED86420975"
+    "registration_number": "MED86420975",
+    "workplace": "VisionPlus Eye Clinic, Houston",
+    "fee": "$170 (Consultation)",
+    "availability": ["Monday", "Wednesday", "Friday"]
   },
   {
     "id": 6,
@@ -69,6 +84,9 @@
     ],
     "speciality": "Dermatology",
     "experience": "9 Years",
-    "registration_number": "MED75319028"
+    "registration_number": "MED75319028",
+    "workplace": "SkinHealth Center, Miami",
+    "fee": "$190 (Consultation)",
+    "availability": ["Tuesday", "Thursday", "Saturday"]
   }
 ]

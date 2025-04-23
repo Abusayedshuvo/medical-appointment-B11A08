@@ -6,6 +6,7 @@
 - React Router
 - Tailwind CSS
 - React Counter
+- React-toastify
 
 ## Sections
 
