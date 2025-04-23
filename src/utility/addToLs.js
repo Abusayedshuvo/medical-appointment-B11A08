@@ -19,4 +19,19 @@ const addToStoreLs = (id) => {
   }
 };
 
-export { addToStoreLs, getStoreDoc };
+const removeFromStoreLs = (id) => {
+  const storeDocData = getStoreDoc();
+  const idString = id.toString();
+  const index = storeDocData.indexOf(idString);
+
+  if (index !== -1) {
+    storeDocData.splice(index, 1);
+    const data = JSON.stringify(storeDocData);
+    localStorage.setItem("docList", data);
+    return true;
+  }
+
+  return false;
+};
+
+export { addToStoreLs, getStoreDoc, removeFromStoreLs };

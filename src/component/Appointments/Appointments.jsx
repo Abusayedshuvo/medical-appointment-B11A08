@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
-import { getStoreDoc } from "../../utility/addToLs";
+import { getStoreDoc, removeFromStoreLs } from "../../utility/addToLs";
 
 const Appointments = () => {
   const data = useLoaderData();
@@ -12,6 +12,18 @@ const Appointments = () => {
     const docList = data.filter((doc) => convertedData.includes(doc.id));
     setAppointmentsList(docList);
   }, [data]);
+
+  const handleCancle = (id) => {
+    const success = removeFromStoreLs(id);
+    if (success) {
+      console.log(`Document with ID ${id} removed successfully`);
+      setAppointmentsList((prevList) =>
+        prevList.filter((doc) => doc.id !== id)
+      );
+    } else {
+      console.log(`Document with ID ${id} not found in storage`);
+    }
+  };
   return (
     <div>
       <div className="text-center mb-8">
@@ -42,7 +54,10 @@ const Appointments = () => {
           </div>
           <div className="border-dashed w-full border-t border-[#0F0F0F]/20 py-3"></div>
 
-          <button className="text-[#FF0000] border border-[#FF0000] w-full rounded-full py-3">
+          <button
+            onClick={() => handleCancle(item.id)}
+            className="text-[#FF0000] border border-[#FF0000] w-full rounded-full py-3"
+          >
             Cancel Appointment
           </button>
         </div>
